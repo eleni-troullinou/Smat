@@ -12,7 +12,7 @@ void setup() {
   pinMode(led1, OUTPUT);
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);          
-}                                                                  //@ioanna_kalogeropoulou
+}                                                               
 
 // the loop function runs over and over again forever
 void loop() {
@@ -25,13 +25,13 @@ void loop() {
     digitalWrite(led1, HIGH);   //turn the LED on (HIGH is the voltage level)
     digitalWrite(led2, LOW); 
     digitalWrite(led3, LOW);
-    delay(1000);                                                  //@maritina_sourbati
+    delay(1000);                                              
   }else if(fsrReading >= 20 && fsrReading < 50){
     Serial.println("squeeze medium");
     digitalWrite(led2, HIGH); 
     digitalWrite(led1, LOW);
     digitalWrite(led3, LOW);
-    delay(1000);                                                 //@eleni_troullinou
+    delay(1000);                                                 
    }else if(fsrReading >= 50){
     Serial.println("squeeze high");
     digitalWrite(led3, HIGH); 
@@ -41,7 +41,7 @@ void loop() {
   }else{
     digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
-    digitalWrite(led3, LOW);                                     //@aristi_suriou
+    digitalWrite(led3, LOW);
   } 
   
   
